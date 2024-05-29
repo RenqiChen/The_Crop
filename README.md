@@ -13,6 +13,7 @@ We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the cor
 To install the required packages, run:
 
 `pip install -r requirements.txt`.
+
 This includes jupyter, as you need it to run the notebooks.
 
 #Note
@@ -24,13 +25,15 @@ We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this wor
 
 To use seed data for fine-tuning models, download the seed datasets to the './train/data' folder and revise the file 'dataset_info.json':
 file by adding the following annotation to the config file:
-
+'
   "seed_dataset": {
     "file_name": "seed dataset.json"
   }
-  
+'
 Here, file_name is the path to the seed dataset. Then, update the training command from:
+
 ' --dataset ruozhiba' 
+
 to
 
 '--dataset ruozhiba,seed_dataset'
