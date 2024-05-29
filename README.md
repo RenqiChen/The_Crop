@@ -11,8 +11,8 @@ This repository contains the code for our CVPR 2024 paper `HiKER-SGG: Hierarchic
 We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
 
 To install the required packages, run:
-
-`pip install -r requirements.txt`.
+```bash
+pip install -r requirements.txt.
 
 This includes jupyter, as you need it to run the notebooks.
 
@@ -25,18 +25,17 @@ We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this wor
 
 To use seed data for fine-tuning models, download the seed datasets to the './train/data' folder and revise the file 'dataset_info.json':
 file by adding the following annotation to the config file:
-'
+```json
   "seed_dataset": {
     "file_name": "seed dataset.json"
   }
-'
 Here, file_name is the path to the seed dataset. Then, update the training command from:
-
-' --dataset ruozhiba' 
+```bash
+ --dataset ruozhiba
 
 to
-
-'--dataset ruozhiba,seed_dataset'
+```bash
+--dataset ruozhiba,seed_dataset
 
 We recommend downloading the pre-trained model weights to the /train/model folder.
 
