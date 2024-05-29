@@ -46,7 +46,9 @@ We recommend downloading the pre-trained model weights to the /train/model folde
 ## 📦Usage
 
 To train local models using our dataset with LoRA, run:
+```
 'CUDA_VISIBLE_DEVICES=0 python src/train_bash.py --stage sft --model_name_or_path ./model/Meta-Llama-3-8B  --do_train --dataset ruozhiba --finetuning_type lora  --lora_target q_proj,v_proj --output_dir /output --logging_steps 10 --save_steps 100 --num_train_epochs 4 --plot_loss --per_device_train_batch_size=4 --fp16 --template default --preprocessing_num_workers 1'
+```
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈VG-C Benchmark
 
