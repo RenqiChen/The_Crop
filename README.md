@@ -8,41 +8,40 @@ This repository contains the code for our CVPR 2024 paper `HiKER-SGG: Hierarchic
 
 ## 💡Environment
 
-We test our codebase with PyTorch 1.12.0 with CUDA 11.6. Please install corresponding PyTorch and CUDA versions according to your computational resources.
+We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
 
-Then install the rest of required packages by running `pip install -r requirements.txt`. This includes jupyter, as you need it to run the notebooks.
+To install the required packages, run:
+
+`pip install -r requirements.txt`.
+This includes jupyter, as you need it to run the notebooks.
+
+#Note
+flash-attention need linux kernel higher than 5.5
 
 ## ⏳Setup
 
-We use the [Visual Genome](https://homes.cs.washington.edu/~ranjay/visualgenome/index.html) dataset in this work, which consists of 108,077 images, each annotated with objects and relations. Following [previous work](https://arxiv.org/pdf/1701.02426.pdf), we filter the dataset to use the most frequent 150 object classes and 50 predicate classes for experiments.
+We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
 
-You can download the images here, then extract the two zip files and put all the images in a single folder:
+To use seed data for fine-tuning models, download the seed datasets to the './train/data' folder and revise the file 'dataset_info.json':
+file by adding the following annotation to the config file:
 
-Part I: https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip
+  "seed_dataset": {
+    "file_name": "seed dataset.json"
+  }
+  
+Here, file_name is the path to the seed dataset. Then, update the training command from:
+' --dataset ruozhiba' 
+to
 
-Part II: https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip
+'--dataset ruozhiba,seed_dataset'
 
-Then download VG metadata preprocessed by [IMP](https://arxiv.org/abs/1701.02426): [annotations](http://svl.stanford.edu/projects/scene-graph/dataset/VG-SGG.h5), [class info](http://svl.stanford.edu/projects/scene-graph/dataset/VG-SGG-dicts.json),and [image metadata](http://svl.stanford.edu/projects/scene-graph/VG/image_data.json) and copy those three files in a single folder.
-
-Finally, update `config.py` to with a path to the aforementioned data, as well as the absolute path to this directory.
-
-We also provide two pre-trained weights:
-
-1. The pre-trained Faster-RCNN checkpoint trained by [MotifNet](https://arxiv.org/pdf/1711.06640.pdf) from https://www.dropbox.com/s/cfyqhskypu7tp0q/vg-24.tar?dl=0 and place in `checkpoints/vgdet/vg-24`.
-
-2. The pre-trained GB-Net checkpoint ``vgrel-11`` from https://github.com/alirezazareian/gbnet and place in `checkpoints/vgdet/vgrel-11`.
-
-If you want to train from scratch, you can pre-train the model using Faster-RCNN checkpoint. However, we recommend to train from the GB-Net checkpoint.
+We recommend downloading the pre-trained model weights to the /train/model folder.
 
 ## 📦Usage
 
-You can simply follow the instructions in the notebooks to run HiKER-SGG experiments:
-
-1. For the PredCls task: ``train: ipynb/train_predcls/hikersgg_predcls_train.ipynb``, ``evaluate: ipynb/eval_predcls/hikersgg_predcls_test.ipynb``.
-2. For the SGCls task: ``train: ipynb/train_sgcls/hikersgg_sgcls_train.ipynb``, ``evaluate: ipynb/eval_sgcls/hikersgg_sgcls_train.ipynb``.
-
-Note that for the PredCls task, we start training from the GB-Net checkpoint; and for the SGCls task, we start training from the best PredCls checkpoint.
-
+To train local models using our dataset with LoRA, run:
+'CUDA_VISIBLE_DEVICES=0 python src/train_bash.py --stage sft --model_name_or_path ./model/Meta-Llama-3-8B  --do_train --dataset ruozhiba --finetuning_type lora  --lora_target q_proj,v_proj --output_dir /output --logging_steps 10 --save_steps 100 --num_train_epochs 4 --plot_loss --per_device_train_batch_size=4 --fp16 --template default --preprocessing_num_workers 1'
+This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈VG-C Benchmark
 
 In our paper, we introduce a new synthetic VG-C benchmark for SGG, containing 20 challenging image corruptions, including simple transformations and severe weather conditions.
@@ -71,4 +70,4 @@ If you find this code useful, please consider citing our work:
   year={2024}
 }
 ```
-
+This work inspired by [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory)
