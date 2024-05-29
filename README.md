@@ -17,7 +17,7 @@ pip install -r requirements.txt.
 
 This includes jupyter, as you need it to run the notebooks.
 
-# Note
+### Note
 flash-attention need linux kernel higher than 5.5
 
 ## ⏳Setup
