@@ -12,7 +12,7 @@ We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the cor
 
 To install the required packages, run:
 ```bash
-pip install -r requirements.txt.
+pip install -r requirements.txt.```
 
 This includes jupyter, as you need it to run the notebooks.
 
@@ -28,14 +28,14 @@ file by adding the following annotation to the config file:
 ```json
   "seed_dataset": {
     "file_name": "seed dataset.json"
-  }
+  }```
 Here, file_name is the path to the seed dataset. Then, update the training command from:
 ```bash
- --dataset ruozhiba
+ --dataset ruozhiba```
 
 to
 ```bash
---dataset ruozhiba,seed_dataset
+--dataset ruozhiba,seed_dataset```
 
 We recommend downloading the pre-trained model weights to the /train/model folder.
 
