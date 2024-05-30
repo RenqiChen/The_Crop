@@ -2,9 +2,8 @@
 
 ## 👀Introduction
 
-This repository contains the code for our CVPR 2024 paper `HiKER-SGG: Hierarchical Knowledge Enhanced Robust Scene Graph Generation`. [[Paper](https://arxiv.org/abs/2403.12033)] [[Website](https://zhangce01.github.io/HiKER-SGG/)]
-
-![](fig/hikersgg.png)
+This repository contains the code and data for our NIPS 2024 paper `The Seed`.
+## 📚 Data
 
 ## 💡Environment
 
@@ -14,8 +13,6 @@ To install the required packages, run:
 ```bash
 pip install -r requirements.txt.
 ```
-
-This includes jupyter, as you need it to run the notebooks.
 
 ### Note
 flash-attention need linux kernel higher than 5.5
