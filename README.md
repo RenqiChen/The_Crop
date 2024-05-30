@@ -5,7 +5,7 @@
 This repository contains the code and data for our NIPS 2024 paper `The Seed`.
 ## 📚 Dataset
 In our work, we propose a instruction fine-tuning dataset for crop cultivation.
-# Composition of the Single-round Dialogue Dataset
+### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
 
 | Cereal | Type | Task                        | English QA | Chinese QA | Total  |
@@ -24,6 +24,26 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 | Overall| ---      | ---                      | 85134      | 124904     | 210038 |
 
 *The 'Others' category includes data from other grains like wheat, which is less than 1000 QA pairs in total.
+
+### Composition of the Multiple-round Dialogue Dataset
+
+**Table \ref{composition_Multi}**: Composition of the Multiple-round Dialogue Dataset.
+
+| Cereal | Scenario                  | Task                     | English QA                     | Chinese QA                  | Total |
+|--------|---------------------------|--------------------------|--------------------------------|-----------------------------|-------|
+| Rice   | \multirow{3}{*}{Problem Solving}       | Pest Control              | 14 (3-turn) + 71 (4-turn)     | 8 (3-turn) + 37 (4-turn)    | 130   |
+|        |                           | Nutrient Supplementation  | 19 (3-turn) + 93 (4-turn)      | 2 (3-turn) + 90 (4-turn) + 1 (5-turn) | 205   |
+|        |                           | Disease Containment       | 19 (3-turn) + 60 (4-turn)      | 4 (3-turn) + 39 (4-turn)    | 122   |
+|        | \multirow{2}{*}{Personalized Recommendation} | Crop Variety Selection    | 12 (3-turn) + 53 (4-turn)     | 9 (3-turn) + 9 (4-turn)     | 83    |
+|        |                           | Resource Management       | 4 (3-turn) + 110 (4-turn) + 1 (5-turn) | 5 (3-turn) + 50 (4-turn)    | 170   |
+|        | Knowledge Interpretation  | Research Interpretation   | 3 (3-turn) + 125 (4-turn) + 1 (5-turn) | 8 (3-turn) + 85 (4-turn)    | 222   |
+| Corn   | \multirow{3}{*}{Problem Solving}       | Pest Control              | 20 (3-turn) + 84 (4-turn)     | 7 (3-turn) + 77 (4-turn)    | 188   |
+|        |                           | Nutrient Supplementation  | 24 (3-turn) + 56 (4-turn)      | 8 (3-turn) + 30 (4-turn)    | 118   |
+|        |                           | Disease Containment       | 21 (3-turn) + 64 (4-turn)      | 2 (3-turn) + 19 (4-turn) + 1 (5-turn) | 107   |
+|        | \multirow{2}{*}{Personalized Recommendation} | Crop Variety Selection    | 19 (3-turn) + 75 (4-turn)     | 46 (3-turn) + 47 (4-turn)   | 187   |
+|        |                           | Resource Management       | 8 (3-turn) + 94 (4-turn)       | 1 (3-turn) + 69 (4-turn)    | 172   |
+|        | Knowledge Interpretation  | Research Interpretation   | 5 (3-turn) + 94 (4-turn) + 1 (5-turn) | 6 (3-turn) + 61 (4-turn)    | 167   |
+| Overall| ---                       | ---                      | 1150                           | 721                         | 1871  |
 
 
 ## 💡Environment
