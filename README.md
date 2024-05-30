@@ -44,8 +44,8 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 |        | Knowledge Interpretation  | Research Interpretation   | 5 (3-turn) + 94 (4-turn) + 1 (5-turn) | 6 (3-turn) + 61 (4-turn)    | 167   |
 | Overall| ---                       | ---                      | 1150                           | 721                         | 1871  |
 
-
-## 💡Environment
+## 💻 Training
+### 💡Environment
 
 We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
 
@@ -54,10 +54,10 @@ To install the required packages, run:
 pip install -r requirements.txt.
 ```
 
-### Note
+#### Note
 flash-attention need linux kernel higher than 5.5
 
-## ⏳Setup
+### ⏳Setup
 
 We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
 
@@ -88,24 +88,22 @@ then download a pretraining model:
 [InternLM2-7B](https://huggingface.co/internlm/internlm2-7b) ,
 [Qwen1.5-7B](https://huggingface.co/Qwen/Qwen1.5-7B) .
 
-## 📦Usage
+### 📦Usage
 
 To train local models using our dataset with LoRA, run:
 ```
 'CUDA_VISIBLE_DEVICES=0 python src/train_bash.py --stage sft --model_name_or_path ./train/model/Meta-Llama-3-8B  --do_train --dataset ruozhiba --finetuning_type lora  --lora_target q_proj,v_proj --output_dir /output --logging_steps 10 --save_steps 100 --num_train_epochs 4 --plot_loss --per_device_train_batch_size=4 --fp16 --template default --preprocessing_num_workers 1'
 ```
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
-## 📈VG-C Benchmark
+## 📈 Benchmark
 
 In our paper, we introduce a new synthetic VG-C benchmark for SGG, containing 20 challenging image corruptions, including simple transformations and severe weather conditions.
-
-![](fig/corruption.png)
 
 We include the code for generating these 20 corruptions in ``dataloaders/corruptions.py``. To use it, you also need to modify the codes in ``dataloaders/visual_genome.py``, and also enable ``-test_n`` in the evaluation notebook file.
 
 ## 🙏Acknowledgements
 
-Our codebase is adapted from [GB-Net](https://github.com/alirezazareian/gbnet) and [EB-Net](https://github.com/zhanwenchen/eoa). We thank the authors for releasing their code!
+This work inspired by [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory).
 
 ## 📧Contact
 
@@ -123,4 +121,4 @@ If you find this code useful, please consider citing our work:
   year={2024}
 }
 ```
-This work inspired by [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory)
+
