@@ -11,15 +11,15 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 | Cereal | Type | Task                        | English QA | Chinese QA | Total  |
 |--------|------|-----------------------------|------------|------------|--------|
 | Rice   | Closed QA | In-domain knowledge QA  | 42951      | 83396      | 126347 |
-|        | Open QA   | In-domain knowledge QA  | 2430       | 2037       |        |
-|        |           | Event extraction        | 1891       | 1030       |        |
-|        |           | Named Entity Recognition| 2003       | 1604       |        |
-|        |           | Summary                 | 1586       | 1628       | 14209  |
+| Rice       | Open QA   | In-domain knowledge QA  | 2430       | 2037       | 4467       |
+|  Rice      |   Open QA        | Event extraction        | 1891       | 1030       |  2921      |
+|  Rice      | Open QA          | Named Entity Recognition| 2003       | 1604       |  3607      |
+| Rice       |  Open QA         | Summary                 | 1586       | 1628       | 3214  |
 | Corn   | Closed QA | In-domain knowledge QA  | 25259      | 27667      | 52926  |
-|        | Open QA   | In-domain knowledge QA  | 3202       | 3047       |        |
-|        |           | Event extraction        | 2245       | 1322       |        |
-|        |           | Named Entity Recognition| 2008       | 1316       |        |
-|        |           | Summary                 | 1559       | 1857       | 16556  |
+|  Corn      | Open QA   | In-domain knowledge QA  | 3202       | 3047       | 6249       |
+| Corn       | Open QA          | Event extraction        | 2245       | 1322       | 3567       |
+|  Corn      |  Open QA         | Named Entity Recognition| 2008       | 1316       | 3324       |
+|   Corn     |   Open QA        | Summary                 | 1559       | 1857       | 3416  |
 | Others*| ---      | ---                      | ---        | ---        | <1000  |
 | Overall| ---      | ---                      | 85134      | 124904     | 210038 |
 
