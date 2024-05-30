@@ -1,8 +1,8 @@
-# [Submitted to NIPS2024 Dataset & Benchmark Track] The Seed.
+# [Submitted to NIPS2024 Dataset & Benchmark Track] Seed Dataset and Benchmark.
 
 ## 👀Introduction
 
-This repository contains the code and data for our NIPS 2024 paper `The Seed`.
+This repository contains the code and data for our NIPS 2024 paper `Empowering and Assessing Large Language Models in Assisting Seed Industry`.
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 ## 📚 Dataset
 In our work, we propose a instruction fine-tuning dataset for crop cultivation. The url for dataset: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
