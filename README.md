@@ -1,4 +1,4 @@
-# [CVPR 2024] HiKER-SGG
+# [Submitted to NIPS2024 Dataset & Benchmark Track] The Seed.
 
 ## 👀Introduction
 
