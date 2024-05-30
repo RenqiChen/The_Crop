@@ -96,7 +96,7 @@ To train local models using our dataset with LoRA, run:
 ```
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈 Benchmark
-
+![Benchmark Framework](./Figure/benchmark_aft_distribution)
 In our paper, we introduce a new seed benchmark for crop cultivation, containing three difficulty levels.
 | Level    | Count | Proportion |
 |----------|-------|------------|
