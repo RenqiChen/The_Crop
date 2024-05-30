@@ -97,9 +97,13 @@ To train local models using our dataset with LoRA, run:
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈 Benchmark
 
-In our paper, we introduce a new synthetic VG-C benchmark for SGG, containing 20 challenging image corruptions, including simple transformations and severe weather conditions.
+In our paper, we introduce a new seed benchmark for crop cultivation, containing three difficulty levels.
+| Level    | Count | Proportion |
+|----------|-------|------------|
+| Easy     | 1613  | 31.97%     |
+| Moderate | 2754  | 53.72%     |
+| Difficult| 722   | 14.31%     |
 
-We include the code for generating these 20 corruptions in ``dataloaders/corruptions.py``. To use it, you also need to modify the codes in ``dataloaders/visual_genome.py``, and also enable ``-test_n`` in the evaluation notebook file.
 
 ## 🙏Acknowledgements
 
