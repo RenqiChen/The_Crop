@@ -97,7 +97,7 @@ To train local models using our dataset with LoRA, run:
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈 Benchmark
 ![Benchmark Framework](./Figure/benchmark_aft_distribution.png)
-In our paper, we introduce a new seed benchmark for crop cultivation, containing three difficulty levels.
+In our paper, we introduce a new seed benchmark for crop cultivation, containing three difficulty levels. The url for benchmark: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
 | Level    | Count | Proportion |
 |----------|-------|------------|
 | Easy     | 1613  | 31.97%     |
@@ -118,11 +118,6 @@ If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang
 If you find this code useful, please consider citing our work:
 
 ```bibtex
-@inproceedings{zhang2024hikersgg,
-  title={HiKER-SGG: Hierarchical Knowledge Enhanced Robust Scene Graph Generation},
-  author={Zhang, Ce and Stepputtis, Simon and Campbell, Joseph and Sycara, Katia and Xie, Yaqi},
-  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2024}
-}
+
 ```
 
