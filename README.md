@@ -47,9 +47,9 @@ cd /train
 mkdir model
 ```
 then download a pretraining model:
-[LLama3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B) 
-[InternLM2-7B](https://huggingface.co/internlm/internlm2-7b)
-[Qwen1.5-7B](https://huggingface.co/Qwen/Qwen1.5-7B)
+[LLama3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B) ,
+[InternLM2-7B](https://huggingface.co/internlm/internlm2-7b) ,
+[Qwen1.5-7B](https://huggingface.co/Qwen/Qwen1.5-7B) .
 
 ## 📦Usage
 
