@@ -103,11 +103,11 @@ We include the code for generating these 20 corruptions in ``dataloaders/corrupt
 
 ## 🙏Acknowledgements
 
-This work inspired by [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory).
+The fine-tuning framework in this work is based on the [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory).
 
 ## 📧Contact
 
-If you have any questions, please  contact at [cezhang@cs.cmu.edu](mailto:cezhang@cs.cmu.edu).
+If you have any questions, please  contact at [chenrenqi@pjlab.org.cn].
 
 ## 📌 BibTeX & Citation
 
