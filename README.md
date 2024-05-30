@@ -107,7 +107,7 @@ The fine-tuning framework in this work is based on the [LLama-Facotry](https://g
 
 ## 📧Contact
 
-If you have any questions, please  contact at [chenrenqi@pjlab.org.cn].
+If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang@pjlab.org.cn, sunjiawei2@pjlab.org.cn].
 
 ## 📌 BibTeX & Citation
 
