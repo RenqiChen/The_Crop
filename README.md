@@ -11,15 +11,15 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 | Cereal | Type | Task                        | English QA | Chinese QA | Total  |
 |--------|------|-----------------------------|------------|------------|--------|
 | Rice   | Closed QA | In-domain knowledge QA  | 42951      | 83396      | 126347 |
-| Rice       | Open QA   | In-domain knowledge QA  | 2430       | 2037       | 4467       |
-|  Rice      |   Open QA        | Event extraction        | 1891       | 1030       |  2921      |
-|  Rice      | Open QA          | Named Entity Recognition| 2003       | 1604       |  3607      |
-| Rice       |  Open QA         | Summary                 | 1586       | 1628       | 3214  |
+|        | Open QA   | In-domain knowledge QA  | 2430       | 2037       | 4467       |
+|        |           | Event extraction        | 1891       | 1030       |  2921      |
+|       |           | Named Entity Recognition| 2003       | 1604       |  3607      |
+|        |          | Summary                 | 1586       | 1628       | 3214  |
 | Corn   | Closed QA | In-domain knowledge QA  | 25259      | 27667      | 52926  |
-|  Corn      | Open QA   | In-domain knowledge QA  | 3202       | 3047       | 6249       |
-| Corn       | Open QA          | Event extraction        | 2245       | 1322       | 3567       |
-|  Corn      |  Open QA         | Named Entity Recognition| 2008       | 1316       | 3324       |
-|   Corn     |   Open QA        | Summary                 | 1559       | 1857       | 3416  |
+|       | Open QA   | In-domain knowledge QA  | 3202       | 3047       | 6249       |
+|        |         | Event extraction        | 2245       | 1322       | 3567       |
+|       |         | Named Entity Recognition| 2008       | 1316       | 3324       |
+|       |          | Summary                 | 1559       | 1857       | 3416  |
 | Others*| ---      | ---                      | ---        | ---        | <1000  |
 | Overall| ---      | ---                      | 85134      | 124904     | 210038 |
 
@@ -27,20 +27,19 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 
 ### Composition of the Multiple-round Dialogue Dataset
 
-**Table \ref{composition_Multi}**: Composition of the Multiple-round Dialogue Dataset.
 
 | Cereal | Scenario                  | Task                     | English QA                     | Chinese QA                  | Total |
 |--------|---------------------------|--------------------------|--------------------------------|-----------------------------|-------|
-| Rice   | \multirow{3}{*}{Problem Solving}       | Pest Control              | 14 (3-turn) + 71 (4-turn)     | 8 (3-turn) + 37 (4-turn)    | 130   |
+| Rice   | Problem Solving      | Pest Control              | 14 (3-turn) + 71 (4-turn)     | 8 (3-turn) + 37 (4-turn)    | 130   |
 |        |                           | Nutrient Supplementation  | 19 (3-turn) + 93 (4-turn)      | 2 (3-turn) + 90 (4-turn) + 1 (5-turn) | 205   |
 |        |                           | Disease Containment       | 19 (3-turn) + 60 (4-turn)      | 4 (3-turn) + 39 (4-turn)    | 122   |
-|        | \multirow{2}{*}{Personalized Recommendation} | Crop Variety Selection    | 12 (3-turn) + 53 (4-turn)     | 9 (3-turn) + 9 (4-turn)     | 83    |
+|        | Personalized Recommendation | Crop Variety Selection    | 12 (3-turn) + 53 (4-turn)     | 9 (3-turn) + 9 (4-turn)     | 83    |
 |        |                           | Resource Management       | 4 (3-turn) + 110 (4-turn) + 1 (5-turn) | 5 (3-turn) + 50 (4-turn)    | 170   |
 |        | Knowledge Interpretation  | Research Interpretation   | 3 (3-turn) + 125 (4-turn) + 1 (5-turn) | 8 (3-turn) + 85 (4-turn)    | 222   |
-| Corn   | \multirow{3}{*}{Problem Solving}       | Pest Control              | 20 (3-turn) + 84 (4-turn)     | 7 (3-turn) + 77 (4-turn)    | 188   |
+| Corn   | Problem Solving     | Pest Control              | 20 (3-turn) + 84 (4-turn)     | 7 (3-turn) + 77 (4-turn)    | 188   |
 |        |                           | Nutrient Supplementation  | 24 (3-turn) + 56 (4-turn)      | 8 (3-turn) + 30 (4-turn)    | 118   |
 |        |                           | Disease Containment       | 21 (3-turn) + 64 (4-turn)      | 2 (3-turn) + 19 (4-turn) + 1 (5-turn) | 107   |
-|        | \multirow{2}{*}{Personalized Recommendation} | Crop Variety Selection    | 19 (3-turn) + 75 (4-turn)     | 46 (3-turn) + 47 (4-turn)   | 187   |
+|        | Personalized Recommendation| Crop Variety Selection    | 19 (3-turn) + 75 (4-turn)     | 46 (3-turn) + 47 (4-turn)   | 187   |
 |        |                           | Resource Management       | 8 (3-turn) + 94 (4-turn)       | 1 (3-turn) + 69 (4-turn)    | 172   |
 |        | Knowledge Interpretation  | Research Interpretation   | 5 (3-turn) + 94 (4-turn) + 1 (5-turn) | 6 (3-turn) + 61 (4-turn)    | 167   |
 | Overall| ---                       | ---                      | 1150                           | 721                         | 1871  |
