@@ -46,7 +46,7 @@ Please note that despite our data-cleaning efforts, the final QA pairs inevitabl
 | Overall| ---                       | ---                      | 1150                           | 721                         | 1871  |
 
 ## 💻 Training
-### 💡Environment
+### Environment
 
 We tested our codebase with PyTorch 1.13.1 and CUDA 11.6. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
 
@@ -58,7 +58,7 @@ pip install -r requirements.txt.
 #### Note
 flash-attention need linux kernel higher than 5.5
 
-### ⏳Setup
+### Setup
 
 We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
 
@@ -89,7 +89,7 @@ then download a pretraining model:
 [InternLM2-7B](https://huggingface.co/internlm/internlm2-7b) ,
 [Qwen1.5-7B](https://huggingface.co/Qwen/Qwen1.5-7B) .
 
-### 📦Usage
+### Usage
 
 To train local models using our dataset with LoRA, run:
 ```
@@ -105,6 +105,7 @@ In our paper, we introduce a new seed benchmark for crop cultivation, containing
 | Moderate | 2754  | 53.72%     |
 | Difficult| 722   | 14.31%     |
 
+## 💡Prompt
 
 ## 🙏Acknowledgements
 
