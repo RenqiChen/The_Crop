@@ -110,14 +110,36 @@ In our paper, we introduce a new seed benchmark for crop cultivation, containing
 ### Code
 
 The codes for the prompts of seed dataset are released in ./Code/prompt.
-Single-turn dialogue:
+
+(1) Single-turn dialogue:
+
 CQA: closed-book QA
+
 OQA: open-book QA
+
 EE: event extraction
+
 NER: named entity recognition
+
 Summary: summary
+
 EN: English, CH: Chinese
+
+(2) Multi-turn dialogue:
+
+EN: English, CH: Chinese
+
 The codes for the prompts of seed benchmark are released in ./Code/benchmark.
+
+### Usage
+
+Take closed-book QA prompt as an example:
+
+```
+python prompt_cqa_en.py
+```
+
+Please note to replace the input/output folder and API.
 
 ## 🙏 Acknowledgements
 
