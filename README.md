@@ -105,13 +105,33 @@ In our paper, we introduce a new seed benchmark for crop cultivation, containing
 | Moderate | 2754  | 53.72%     |
 | Difficult| 722   | 14.31%     |
 
-## 💡Prompt
+## 💡 Prompt
 
-## 🙏Acknowledgements
+### Code
+
+The codes for the prompts of seed dataset are released in ./Code/prompt.
+
+Single-turn dialogue:
+
+CQA: closed-book QA
+
+OQA: open-book QA
+
+EE: event extraction
+
+NER: named entity recognition
+
+Summary: summary
+
+EN: English, CH: Chinese
+
+The codes for the prompts of seed benchmark are released in ./Code/benchmark.
+
+## 🙏 Acknowledgements
 
 The fine-tuning framework in this work is based on the [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory).
 
-## 📧Contact
+## 📧 Contact
 
 If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang@pjlab.org.cn, sunjiawei2@pjlab.org.cn].
 
