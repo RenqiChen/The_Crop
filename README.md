@@ -110,21 +110,13 @@ In our paper, we introduce a new seed benchmark for crop cultivation, containing
 ### Code
 
 The codes for the prompts of seed dataset are released in ./Code/prompt.
-
 Single-turn dialogue:
-
 CQA: closed-book QA
-
 OQA: open-book QA
-
 EE: event extraction
-
 NER: named entity recognition
-
 Summary: summary
-
 EN: English, CH: Chinese
-
 The codes for the prompts of seed benchmark are released in ./Code/benchmark.
 
 ## 🙏 Acknowledgements
