@@ -149,6 +149,10 @@ The fine-tuning framework in this work is based on the [LLama-Facotry](https://g
 
 If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang@pjlab.org.cn, sunjiawei2@pjlab.org.cn].
 
+## ⚖ License
+
+This repository is licensed under the [Apache-2.0 License](LICENSE).
+
 ## 📌 BibTeX & Citation
 
 If you find this code useful, please consider citing our work:
