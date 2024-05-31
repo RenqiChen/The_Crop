@@ -1,8 +1,8 @@
-# [Submitted to NIPS2024 Dataset & Benchmark Track] Seed Dataset and Benchmark.
+# [Submitted to NIPS2024 Dataset & Benchmark Track] Crop Dataset and Benchmark.
 
 ## 👀Introduction
 
-This repository contains the code and data for our paper `Empowering and Assessing Large Language Models in Assisting Seed Industry`.
+This repository contains the code and data for our paper `Empowering and Assessing Large Language Models in Serving Crop Industry`.
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 ## 📚 Dataset
 In our work, we propose a instruction fine-tuning dataset for crop cultivation. The url for dataset: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
@@ -62,21 +62,21 @@ flash-attention need linux kernel higher than 5.5
 
 We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
 
-To use seed data for fine-tuning models, download the seed datasets to the './train/data' folder and revise the file 'dataset_info.json':
+To use Crop data for fine-tuning models, download the Crop datasets to the './train/data' folder and revise the file 'dataset_info.json':
 file by adding the following annotation to the config file:
 ```json
-  "seed_dataset": {
-    "file_name": "seed dataset.json"
+  "crop_dataset": {
+    "file_name": "crop dataset.json"
   }
 ```
-Here, file_name is the path to the seed dataset. Then, update the training command from:
+Here, file_name is the path to the crop dataset. Then, update the training command from:
 ```bash
  --dataset ruozhiba
 ```
 
 to
 ```bash
---dataset ruozhiba,seed_dataset
+--dataset ruozhiba, crop_dataset
 ```
 
 We recommend downloading the pre-trained model weights to the /train/model folder.
@@ -98,7 +98,7 @@ To train local models using our dataset with LoRA, run:
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
 ## 📈 Benchmark
 ![Benchmark Framework](./Figure/benchmark_aft_distribution.png)
-In our paper, we introduce a new seed benchmark for crop cultivation, containing three difficulty levels. The url for benchmark: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
+In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. The url for benchmark: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
 | Level    | Count | Proportion |
 |----------|-------|------------|
 | Easy     | 1613  | 31.97%     |
@@ -109,7 +109,7 @@ In our paper, we introduce a new seed benchmark for crop cultivation, containing
 
 ### Code
 
-The codes for the prompts of seed dataset are released in ./Code/prompt.
+The codes for the prompts of Crop dataset are released in ./Code/prompt.
 
 (1) Single-turn dialogue:
 
@@ -129,7 +129,7 @@ EN: English, CH: Chinese
 
 EN: English, CH: Chinese
 
-The codes for the prompts of seed benchmark are released in ./Code/benchmark.
+The codes for the prompts of Crop benchmark are released in ./Code/benchmark.
 
 ### Usage
 
