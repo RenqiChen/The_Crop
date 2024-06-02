@@ -73,7 +73,7 @@ To use Crop data for fine-tuning models, download the Crop datasets to the './tr
   }
 ```
 
-Then, update the training command from:
+Then, update the training command:
 
 ```bash
 --dataset ruozhiba, crop_dataset
