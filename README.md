@@ -109,7 +109,7 @@ In our paper, we introduce a new Crop benchmark for crop cultivation, containing
 
 ### Code
 
-The codes for the prompts of Crop dataset are released in ./Code/prompt.
+1. The codes for the prompts of Crop dataset are released in ./Code/prompt.
 
 (1) Single-turn dialogue:
 
@@ -129,7 +129,7 @@ EN: English, CH: Chinese
 
 EN: English, CH: Chinese
 
-The codes for the prompts of Crop benchmark are released in ./Code/benchmark.
+2. The codes for the prompts of Crop benchmark are released in ./Code/benchmark.
 
 ### Usage
 
