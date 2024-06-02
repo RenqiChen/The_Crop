@@ -62,6 +62,10 @@ flash-attention need linux kernel higher than 5.5
 
 We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
 
+```bash
+ --dataset ruozhiba
+```
+
 To use Crop data for fine-tuning models, download the Crop datasets to the './train/data' folder and revise the file 'dataset_info.json':
 file by adding the following annotation to the config file:
 ```json
@@ -69,7 +73,9 @@ file by adding the following annotation to the config file:
     "file_name": "crop dataset.json"
   }
 ```
-Here, file_name is the path to the crop dataset. Then, update the training command from:
+Here, file_name is the path to the crop dataset. 
+
+Then, update the training command from:
 ```bash
  --dataset ruozhiba
 ```
