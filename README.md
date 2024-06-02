@@ -105,6 +105,10 @@ In our paper, we introduce a new Crop benchmark for crop cultivation, containing
 | Moderate | 2754  | 53.72%     |
 | Difficult| 722   | 14.31%     |
 
+### Result of Commercial LLMs
+
+We release the evaluation results of commercial LLMs (GPT-4, GPT-3.5, Claude-3, and Qwen) in ./result/.
+
 ## 💡 Prompt
 
 ### Code
