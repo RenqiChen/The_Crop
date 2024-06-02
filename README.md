@@ -4,10 +4,12 @@
 
 This repository contains the code and data for our paper `Empowering and Assessing Large Language Models in Serving Crop Industry`.
 
+## 📚 Dataset
+
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 
-## 📚 Dataset
 In our work, we propose a instruction fine-tuning dataset for crop cultivation. The url for dataset: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
+
 ### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
 
@@ -98,6 +100,7 @@ To train local models using our dataset with LoRA, run:
 CUDA_VISIBLE_DEVICES=0 python src/train_bash.py --stage sft --model_name_or_path ./train/model/Meta-Llama-3-8B  --do_train --dataset ruozhiba --finetuning_type lora  --lora_target q_proj,v_proj --output_dir /output --logging_steps 10 --save_steps 100 --num_train_epochs 4 --plot_loss --per_device_train_batch_size=4 --fp16 --template default --preprocessing_num_workers 1
 ```
 This refined version should help you better understand and utilize the project. If you have any questions, feel free to reach out.
+
 ## 📈 Benchmark
 
 ![Benchmark Framework](./Figure/benchmark_aft_distribution.png)
