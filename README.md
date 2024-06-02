@@ -139,7 +139,7 @@ Take closed-book QA prompt as an example:
 python prompt_cqa_en.py
 ```
 
-Please note to replace the input/output folder and API.
+Please note to replace the input/output folder path and API key.
 
 ## 🙏 Acknowledgements
 
