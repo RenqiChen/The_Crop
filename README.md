@@ -109,27 +109,27 @@ In our paper, we introduce a new Crop benchmark for crop cultivation, containing
 
 ### Code
 
-1. The codes for the prompts of Crop dataset are released in ./Code/prompt.
+(1) The codes for the prompts of Crop dataset are released in ./Code/prompt.
 
-(1) Single-turn dialogue:
+1. Single-turn dialogue:
 
-CQA: closed-book QA
+ CQA: closed-book QA
+ 
+ OQA: open-book QA
+ 
+ EE: event extraction
+ 
+ NER: named entity recognition
+ 
+ Summary: summary
+ 
+ EN: English, CH: Chinese
 
-OQA: open-book QA
+2. Multi-turn dialogue:
 
-EE: event extraction
+ EN: English, CH: Chinese
 
-NER: named entity recognition
-
-Summary: summary
-
-EN: English, CH: Chinese
-
-(2) Multi-turn dialogue:
-
-EN: English, CH: Chinese
-
-2. The codes for the prompts of Crop benchmark are released in ./Code/benchmark.
+(2) The codes for the prompts of Crop benchmark are released in ./Code/benchmark.
 
 ### Usage
 
