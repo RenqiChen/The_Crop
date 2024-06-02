@@ -66,21 +66,15 @@ We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this wor
  --dataset ruozhiba
 ```
 
-To use Crop data for fine-tuning models, download the Crop datasets to the './train/data' folder and revise the file 'dataset_info.json':
-file by adding the following annotation to the config file:
+To use Crop data for fine-tuning models, download the Crop datasets to the './train/data' folder and revise the file 'dataset_info.json' file by adding the following annotation to the config file:
 ```json
   "crop_dataset": {
     "file_name": "crop dataset.json"
   }
 ```
-Here, file_name is the path to the crop dataset. 
 
 Then, update the training command from:
-```bash
- --dataset ruozhiba
-```
 
-to
 ```bash
 --dataset ruozhiba, crop_dataset
 ```
