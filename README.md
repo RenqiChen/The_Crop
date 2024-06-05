@@ -8,7 +8,7 @@ This repository contains the code and data for our paper `Empowering and Assessi
 
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 
-In our work, we propose a instruction fine-tuning dataset for crop cultivation. The url for dataset: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
+In our work, we propose a instruction fine-tuning dataset for crop cultivation. The url for dataset: https://drive.google.com/drive/folders/1sZmaS7xK_efnynIGF4vrgtnDKZp2mUQg?usp=sharing.
 
 ### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
@@ -105,7 +105,7 @@ This refined version should help you better understand and utilize the project. 
 
 ![Benchmark Framework](./Figure/benchmark_aft_distribution.png)
 
-In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. The url for benchmark: https://drive.google.com/drive/folders/11be8-Gd3h_VntRhmiIdhwopiAS8fh5Y7?usp=sharing.
+In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. The url for benchmark: https://drive.google.com/drive/folders/1sZmaS7xK_efnynIGF4vrgtnDKZp2mUQg?usp=sharing.
 | Level    | Count | Proportion |
 |----------|-------|------------|
 | Easy     | 1613  | 31.97%     |
