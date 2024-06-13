@@ -2,7 +2,7 @@
 
 ## 👀Introduction
 
-This repository contains the code and data for our paper `Empowering and Assessing Large Language Models in Serving Crop Industry`.
+This repository contains the code and data for our paper `Empowering and Assessing the Utility of Large Language Models in Crop Science`.
 
 ## 📚 Dataset
 
