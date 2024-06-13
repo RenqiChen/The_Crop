@@ -8,7 +8,7 @@ This repository contains the code and data for our paper `Empowering and Assessi
 
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 
-In our work, we propose a instruction fine-tuning dataset for crop cultivation. The dataset will be made publicly available soon.
+In our work, we propose a instruction fine-tuning dataset for crop science. The dataset will be made publicly available soon.
 
 ### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
