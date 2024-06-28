@@ -4,6 +4,8 @@
 
 This repository contains the code and data for our paper `Empowering and Assessing the Utility of Large Language Models in Crop Science`.
 
+Our project website is https://RenqiChen.github.io/The_Crop/.
+
 ## 📚 Dataset
 
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
