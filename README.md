@@ -166,7 +166,7 @@ If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang
 
 This repository is licensed under the [Apache-2.0 License](LICENSE).
 
-Dataset and benchmark are licensed under the CC BY NC 4.0 License.
+Dataset and benchmark are licensed under the [CC BY-NC 4.0 License](LICENSE-CC-BY-NC).
 
 ## 📌 BibTeX & Citation
 
