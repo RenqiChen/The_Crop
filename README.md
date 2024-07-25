@@ -129,6 +129,8 @@ We release an `api.sh` file in /train/src folder for you to easily depoly the op
 cd /evaluate
 python localmodel_benchmark.py
 ```
+Please note to replace the input/output folder path.
+
 ## 💡 Prompt
 
 ### Code
