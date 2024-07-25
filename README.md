@@ -124,8 +124,11 @@ We release the evaluation results of commercial LLMs (GPT-4, GPT-3.5, Claude-3, 
 
 ### Open-source LLMs
 
-We release an `api.sh` file in /train/src folder for you to easily depoly the open-source LLMs (LLaMA3-8B, Qwen1.5-7B, and InternLM2-7B) at the local host. 
-
+We release an `api.sh` file in /train/src folder for you to easily depoly the open-source LLMs (LLaMA3-8B, Qwen1.5-7B, and InternLM2-7B) at the local host. Then you could call local model for evaluation by running:
+```
+cd /evaluate
+python localmodel_benchmark.py
+```
 ## 💡 Prompt
 
 ### Code
