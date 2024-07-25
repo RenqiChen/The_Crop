@@ -118,6 +118,8 @@ In our paper, we introduce a new Crop benchmark for crop cultivation, containing
 
 We release the evaluation results of commercial LLMs (GPT-4, GPT-3.5, Claude-3, and Qwen) on Crop benchmark in ./Result/API_result.xlsx.
 
+## :100: Evaluate
+
 ## 💡 Prompt
 
 ### Code
