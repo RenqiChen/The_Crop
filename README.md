@@ -2,7 +2,7 @@
 
 ## 👀Introduction
 
-This repository contains the code and data for our paper `Empowering and Assessing the Utility of Large Language Models in Crop Science`.
+This repository contains the code and data for our paper `Empowering and Assessing the Utility of Large Language Models in Crop Science`. We introduce CROP, which includes a novel instruction tuning dataset (Crop dataset) specifically designed to enhance LLMs’ professional capabilities in the crop science sector, along with a benchmark (Crop benchmark) that serves as a comprehensive evaluation of LLMs’ understanding of the domain knowledge. 
 
 Our project website is https://RenqiChen.github.io/The_Crop/.
 
