@@ -139,7 +139,11 @@ Please note to replace the input/output folder path.
 
 In fact, commercial LLMs could follow the provided prompts to generate formatted results and you can use regular experssions to extract. However, for open-source LLMs, limited by weaker instruction-following abilities, the responses typically do not follow a fixed format. For example, the responses not only include the options but also the content corresponding to those options. In such cases, if we choose to extract options `(A, B, C, D)` from the responses, we will not obtain satisfactory results because there may exist a large number of A, B, C, and D. 
 
-Therefore, when statistically analyzing the results of open-source LLMs, we replace the options in the questions with Roman numerals `(I, II, III, IV)` to ensure uniqueness when extracting with regular expressions, and then calculate the accuracy of the models. We hope this trick could assist in your experiments.
+Therefore, when statistically analyzing the results of open-source LLMs, we replace the options in the questions with Roman numerals `(I, II, III, IV)` to ensure uniqueness when extracting with regular expressions, and then calculate the accuracy of the models. Here we show an example:
+```
+
+```
+We hope this trick could assist in your experiments.
 
 ## 💡 Prompt
 
