@@ -108,7 +108,7 @@ This refined version should help you better understand and utilize the project. 
 ## 📈 Benchmark
 
 <p align="center">
-    <img src="./Figure/benchmark_aft_distribution.png" alt="Benchmark Framework" width="800"/>
+    <img src="./Figure/benchmark_aft_distribution.png" alt="Benchmark Framework" width="700"/>
 </p>
 
 In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. The benchmark will be made publicly available soon (after the review of NIPS2024).
