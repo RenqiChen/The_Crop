@@ -141,7 +141,13 @@ In fact, commercial LLMs could follow the provided prompts to generate formatted
 
 Therefore, when statistically analyzing the results of open-source LLMs, we replace the options in the questions with Roman numerals `(I, II, III, IV)` to ensure uniqueness when extracting with regular expressions, and then calculate the accuracy of the models. Here we show an example:
 ```
-
+This is a multiple-choice question about agriculture. As an agricultural expert, you should answer according to the following rules: Choose the single option that best fits the question from the four options (I, II, III, IV). Note that when outputting the correct answer, if the output is in the form of '0', '1', '2', '3' Arabic numerals, replace them with 'I', 'II', 'III', 'IV' Roman numerals. Your answer should only include the Roman numeral, without any other content.
+Question: What is the primary objective of the study assessing farmers' willingness to pay for adopting sustainable corn traits in Italy?
+Options:
+(I). The study primarily aims to analyze Italian corn farmers' preferences and willingness to pay for maize traits such as yield, yield under water stress conditions, disease resistance, and price, to guide seed breeding programs and agricultural decision-making.
+(II). The main objective of the study is to determine the impact of government subsidies on farmers' decisions to adopt sustainable corn traits in Italy, focusing on economic viability and environmental impact.
+(III). The study seeks to compare traditional and modern corn farming techniques in Italy, assessing farmers' willingness to shift to modern methods based on cost-effectiveness and labor inputs.
+(IV). The primary goal of the study is to evaluate the genetic diversity of corn crops in Italy and its influence on farmers' willingness to adopt new agricultural technologies. 
 ```
 We hope this trick could assist in your experiments.
 
