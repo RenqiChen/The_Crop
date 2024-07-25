@@ -126,7 +126,7 @@ We release the evaluation results of commercial LLMs (GPT-4, GPT-3.5, Claude-3, 
 
 ### Commercial LLMs
 
-We release our evaluation codes for commercial LLMs in `/evaluate` folder, where `gpt3_benchmark.py` is used for GPT-3.5, `gpt4_benchmark.py` is used for GPT-4, `claude3_benchmark.py` is used for Claude-3-opus, `qianwen_benchmark.py` is used for Qwen-max.
+We release our evaluation codes for commercial LLMs in `/evaluate` folder, where `gpt3_benchmark.py` is used for GPT-3.5, `gpt4_benchmark.py` is used for GPT-4, `claude3_benchmark.py` is used for Claude-3-opus, `qianwen_benchmark.py` is used for Qwen-max. `claude3_benchmark_en` is an evaluation code with prompts in English.
 
 Please note to replace the input/output folder path and API key.
 
