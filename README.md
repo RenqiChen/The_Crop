@@ -147,8 +147,13 @@ Options:
 (I). The study primarily aims to analyze Italian corn farmers' preferences and willingness to pay for maize traits such as yield, yield under water stress conditions, disease resistance, and price, to guide seed breeding programs and agricultural decision-making.
 (II). The main objective of the study is to determine the impact of government subsidies on farmers' decisions to adopt sustainable corn traits in Italy, focusing on economic viability and environmental impact.
 (III). The study seeks to compare traditional and modern corn farming techniques in Italy, assessing farmers' willingness to shift to modern methods based on cost-effectiveness and labor inputs.
-(IV). The primary goal of the study is to evaluate the genetic diversity of corn crops in Italy and its influence on farmers' willingness to adopt new agricultural technologies. 
+(IV). A primary goal of the study is to evaluate the genetic diversity of corn crops in Italy and its influence on farmers' willingness to adopt new agricultural technologies. 
 ```
+Even if the response is:
+```
+(IV). A primary goal of the study is to evaluate the genetic diversity of corn crops in Italy and its influence on farmers' willingness to adopt new agricultural technologies.
+```
+You can still extract the option `IV`, rather than the `A` in "A primary goal of the study".
 We hope this trick could assist in your experiments.
 
 ## 💡 Prompt
