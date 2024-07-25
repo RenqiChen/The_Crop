@@ -16,7 +16,7 @@ def create_message(file_path):
 
     system_text1 = "你是一名育种专家，同时是一位农业科学和生物科学的教授，请给出<doc></doc>标记之间的问答的正确选项"
     system_text3 = textwrap.dedent("""对于每一个问答对，你需要注意以下几点：
-                                    1.你需要参照<example></example>标记之间的示例回答，确保完全遵循该示例的格式输出回复。
+                                    1.你需要参照<example></example>标记之间的示例回答，请确保完全遵循该示例的格式输出回复。
                                     2.请将示例回答部分中'{}'之间的部分替换为正确答案。""")
 
     system_text4 = ""
