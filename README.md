@@ -195,6 +195,8 @@ Please note to replace the input/output folder path and API key.
 
 ## 🙏 Acknowledgements
 
+This project is supported by Shanghai Artificial Intelligence Laboratory, Yazhouwan National Laboratory, and China Agricultural University.
+
 The fine-tuning framework in this work is based on the [LLama-Facotry](https://github.com/hiyouga/LLaMA-Factory).
 
 ## 📧 Contact
