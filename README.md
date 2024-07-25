@@ -154,6 +154,7 @@ Even if the response is:
 (IV). A primary goal of the study is to evaluate the genetic diversity of corn crops in Italy and its influence on farmers' willingness to adopt new agricultural technologies.
 ```
 You can still extract the option `IV`, rather than the `A` in "A primary goal of the study".
+
 We hope this trick could assist in your experiments.
 
 ## 💡 Prompt
