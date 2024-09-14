@@ -68,7 +68,7 @@ flash-attention need linux kernel higher than 5.5
 
 ### Setup
 
-We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset in this work, which consists of multi tasks chinese Instruction Fine-tuning
+We use the [COIG-CQIA](https://github.com/paralym/COIG-CQIA) dataset as an additional general dataset in this work to aviod losing generalization capability, which consists of multi tasks chinese Instruction Fine-tuning
 
 ```bash
  --dataset ruozhiba
