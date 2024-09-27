@@ -1,4 +1,4 @@
-# [Submitted to NIPS2024 Dataset & Benchmark Track] Crop Dataset and Benchmark.
+# [NeurIPS2024 Dataset & Benchmark Track] <br> Crop Dataset and Benchmark.
 
 ## 👀Introduction
 
@@ -12,7 +12,7 @@ Our project website is https://RenqiChen.github.io/The_Crop/.
 
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 
-In our work, we propose a instruction fine-tuning dataset for crop science. The dataset will be made publicly available soon (after the review of NIPS2024).
+In our work, we propose a instruction fine-tuning dataset for crop science. The dataset will be made publicly available soon (after the paper publication).
 
 ### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
@@ -205,7 +205,7 @@ The fine-tuning framework in this work is based on the [LLama-Facotry](https://g
 
 ## 📧 Contact
 
-If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang@pjlab.org.cn, sunjiawei2@pjlab.org.cn].
+If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, zhanghang@pjlab.org.cn, jwsun@hdu.edu.cn].
 
 ## ⚖ License
 
