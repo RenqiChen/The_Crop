@@ -12,7 +12,7 @@ Our project website is https://renqichen.github.io/The_Crop/.
 
 ![Dataset Framework](./Figure/dataset_pre_distribution.png)
 
-In our work, we propose a instruction fine-tuning dataset for crop science. The dataset will be made publicly available soon (after the paper publication).
+In our work, we propose a instruction fine-tuning dataset for crop science. Now the dataset is publicly available at https://huggingface.co/AI4Agr.
 
 ### Composition of the Single-round Dialogue Dataset
 Please note that despite our data-cleaning efforts, the final QA pairs inevitably contain a small amount of data (<0.5%) from other grains like wheat. Because we think this data does not dominantly influence the fine-tuning results, it is included in the rice and maize QA pairs, and we have listed it separately to avoid any misleading counts.
@@ -111,7 +111,7 @@ This refined version should help you better understand and utilize the project. 
     <img src="./Figure/benchmark_aft_distribution.png" alt="Benchmark Framework" width="650"/>
 </p>
 
-In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. The benchmark will be made publicly available soon (after the review of NIPS2024).
+In our paper, we introduce a new Crop benchmark for crop cultivation, containing three difficulty levels. Now the benchmark is publicly available at https://huggingface.co/AI4Agr.
 | Level    | Count | Proportion |
 |----------|-------|------------|
 | Easy     | 1613  | 31.97%     |
