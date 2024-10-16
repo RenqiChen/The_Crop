@@ -1,4 +1,4 @@
-# [NeurIPS2024 Dataset & Benchmark Track] <br> Crop Dataset and Benchmark.
+# [NeurIPS2024] <br> Crop Dataset and Benchmark.
 
 ## 👀Introduction
 
