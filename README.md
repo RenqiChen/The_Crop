@@ -215,9 +215,13 @@ Dataset and benchmark are licensed under the [CC BY-NC 4.0 License](LICENSE-CC-B
 
 ## 📌 BibTeX & Citation
 
-If you find this code useful, please consider citing our work:
+If you find our codes and datasets useful, please consider citing our work:
 
 ```bibtex
-Comming soon!
+@inproceedings{zhangempowering,
+  title={Empowering and Assessing the Utility of Large Language Models in Crop Science},
+  author={Zhang, Hang and Sun, Jiawei and Chen, Renqi and Liu, Wei and Yuan, Zhonghang and Zheng, Xinzhe and Wang, Zhefan and Yang, Zhiyuan and Yan, Hang and Zhong, Han-Sen and others},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track}
+}
 ```
 
